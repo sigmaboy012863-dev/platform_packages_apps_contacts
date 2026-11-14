@@ -13,22 +13,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source
+      - name: Checkout Contacts
         uses: actions/checkout@v4
 
-      - name: Set up JDK 11
+      - name: Set up JDK
         uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: '11'
 
-      - name: Check Java
-        run: java -version
-
-      - name: Check AOSP source
+      - name: Check source
         run: |
           test -f Android.bp
           test -f AndroidManifest.xml
           test -d src
           test -d res
-          echo "AOSP Contacts source verified"
+          test -d src-bind
+
+      - name: Prepare Soong build environment
+        run: |
+          echo "AOSP Contacts source detected"
+          echo "Build system: Soong"
+          echo "Module: Contacts"
+
+      - name: Build APK
+        run: |
+          echo "A full AOSP build environment is required."
+          exit 1
