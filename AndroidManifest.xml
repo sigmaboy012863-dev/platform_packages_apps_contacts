@@ -63,7 +63,7 @@
         android:required="false"/>
 
     <application
-        android:name="com.android.contacts.ContactsApplication"
+        android:name="com.contacts.plus.ContactsApplication"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_contacts_launcher"
         android:label="@string/applicationLabel"
