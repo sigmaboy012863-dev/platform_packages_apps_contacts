@@ -39,7 +39,7 @@
         </item>
     </style>
 
-    <style name="PeopleTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+    <style name="PeopleTheme" parent="@android:style/Theme.DeviceDefault.Light">
         <item name="android:actionBarStyle">@style/ContactsActionBarStyle</item>
         <!-- Style for the overflow button in the actionbar. -->
         <item name="android:actionOverflowButtonStyle">@style/ContactsActionBarOverflowQP</item>
@@ -167,7 +167,7 @@
         <item name="popupMenuStyle">@style/PopupMenuStyleAppCompat</item>
     </style>
 
-    <style name="PopupMenuStyle" parent="@android:style/Widget.PopupMenu">
+    <style name="PopupMenuStyle" parent="@android:style/Widget.DeviceDefault.PopupMenu">
         <item name="android:popupBackground">@android:color/white</item>
     </style>
 
@@ -188,7 +188,7 @@
 
     <!-- Use the non-light style so that the up button & icons aren't black. If we use the
          Light style, then it is impossible to tint the homeAsUp icon anything other than black -->
-    <style name="ContactsActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
+    <style name="ContactsActionBarStyle" parent="@android:style/Widget.DeviceDefault.ActionBar">
         <item name="android:background">@color/actionbar_background_color</item>
         <item name="android:titleTextStyle">@style/ContactsActionBarTitleText</item>
         <item name="android:backgroundStacked">@color/actionbar_background_color</item>
@@ -241,7 +241,7 @@
 
     <!-- Text in the action bar at the top of the screen -->
     <style name="ContactsActionBarTitleText"
-        parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+        parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
         <item name="android:textSize">20dp</item>
         <item name="android:textColor">@color/actionbar_text_color</item>
     </style>
@@ -282,14 +282,14 @@
     <style name="NonPhoneActivityTheme" parent="@android:Theme.Translucent.NoTitleBar">
     </style>
 
-    <style name="NonPhoneDialogTheme" parent="@android:Theme.Material.Light.Dialog">
+    <style name="NonPhoneDialogTheme" parent="@android:Theme.DeviceDefault.Light.Dialog">
     </style>
 
-    <style name="ConfirmAddDetailDialogTheme" parent="@android:style/Theme.Material.Light.Dialog.MinWidth">
+    <style name="ConfirmAddDetailDialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth">
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
 
-    <style name="ContactEditorAccountsChangedActivityTheme" parent="@android:style/Theme.Material.Light.Dialog.NoActionBar.MinWidth">
+    <style name="ContactEditorAccountsChangedActivityTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth">
         <item name="android:windowCloseOnTouchOutside">true</item>
         <item name="android:textColorPrimary">@color/primary_text_color</item>
         <item name="android:textColorSecondary">@color/secondary_text_color</item>
@@ -297,7 +297,7 @@
         <item name="android:colorAccent">@color/primary_color</item>
     </style>
 
-    <style name="SelectableItem" parent="@android:style/Theme.Material.Light">
+    <style name="SelectableItem" parent="@android:style/Theme.DeviceDefault.Light">
         <item name="android:background">?android:attr/selectableItemBackground</item>
     </style>
 
@@ -312,7 +312,7 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="SpinnerButtonStyle" parent="@android:style/Widget.Material.Spinner.Underlined">
+    <style name="SpinnerButtonStyle" parent="@android:style/Widget.DeviceDefault.Spinner.Underlined">
         <!-- When applying the spinner style to a Button we need to disable the shadow animation
             on the button since the spinner background is transparent. Otherwise the spinner-button
             will look ridiculous. -->
@@ -336,7 +336,7 @@
 
     <!-- Inherit from Theme.Material.Light.Dialog instead of Theme.Material.Light.Dialog.Alert
         since the Alert dialog is private. They are identical anyway. -->
-    <style name="ContactsAlertDialogTheme" parent="@android:style/Theme.Material.Light.Dialog">
+    <style name="ContactsAlertDialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
         <item name="android:colorAccent">@color/primary_color</item>
     </style>
 
@@ -451,7 +451,7 @@ background and text color. See also android:style/Widget.Holo.TextView.ListSepar
         <item name="android:textColor">#737373</item>
     </style>
 
-    <style name="ListViewStyle" parent="@android:style/Widget.Material.Light.ListView">
+    <style name="ListViewStyle" parent="@android:style/Widget.DeviceDefault.Light.ListView">
         <item name="android:overScrollMode">always</item>
     </style>
 
@@ -467,7 +467,7 @@ background and text color. See also android:style/Widget.Holo.TextView.ListSepar
         <item name="android:layout_height">match_parent</item>
     </style>
 
-    <style name="BackgroundOnlyTheme" parent="@android:style/Theme.Material.Light">
+    <style name="BackgroundOnlyTheme" parent="@android:style/Theme.DeviceDefault.Light">
         <item name="android:windowBackground">@null</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowAnimationStyle">@null</item>
@@ -478,7 +478,7 @@ background and text color. See also android:style/Widget.Holo.TextView.ListSepar
         <item name="android:windowIsFloating">true</item>
     </style>
 
-    <style name="Theme.CallSubjectDialogTheme" parent="@android:style/Theme.Material.Light.Dialog">
+    <style name="Theme.CallSubjectDialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
 
