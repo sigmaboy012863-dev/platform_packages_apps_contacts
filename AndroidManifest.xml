@@ -23,8 +23,6 @@
         android:minSdkVersion="34"
         android:targetSdkVersion="34"/>
 
-    <original-package android:name="com.android.contacts"/>
-
     <!-- Contacts permission listed first because order determines
          order that permissions are requested with some OEMs -->
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
